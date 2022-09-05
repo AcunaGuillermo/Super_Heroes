@@ -9,4 +9,4 @@ class superHeroes(models.Model):
 
 class Poder(models.Model):
     nombre = models.CharField(max_length=128)
-    super_heroes = models.ForeignKey('superHeroes',on_delete=models.CASCADE)
+    super_heroes = models.ForeignKey('superHeroes',on_delete=models.CASCADE,null=True)
