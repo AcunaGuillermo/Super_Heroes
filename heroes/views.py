@@ -8,4 +8,5 @@ def lista_heroes(request):
     diccionario = {'heroes':queryset}
     plantilla = loader.get_template('heroes_list.html')
     documento_html = plantilla.render(diccionario)
+    
     return HttpResponse(documento_html)
