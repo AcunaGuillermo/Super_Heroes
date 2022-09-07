@@ -1,0 +1,10 @@
+{% extends 'heroes/plantilla_base.html' %}
+
+{% block contenido_base %}
+
+Lista de Super heroes
+{% for heroe in heroes%} 
+<p>{{heroe.nombre}}</p>
+{% endfor%} 
+
+{% endblock contenido_base %}
